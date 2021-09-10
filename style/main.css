@@ -1,0 +1,138 @@
+:root{
+    --vermelho: #e50914;
+    --preta: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elemento base*/
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group {
+    justify-content: initial;
+    display: flex;
+    margin-left: 10PX;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 50px;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 20px;
+    
+}
+
+header nav a:hover{
+    color: red;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/genQ-Lword.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}    
+
+.titulo{
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.assistir {
+    border: none;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.assistir:hover{
+    background-color: white;
+    color: black;
+}
+
+i.fas.fa-play{
+    margin-right: 0;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 10px;
+}
